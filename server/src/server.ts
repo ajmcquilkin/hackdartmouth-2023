@@ -2,7 +2,7 @@ import express from "express";
 import axios from 'axios';
 import mysql from 'mysql';
 
-import { handleFetchLocalContext, handleFetchMetaContext } from './handlers';
+import { handleFetchLocalContext, handleFetchMetaContext } from './prompt-engine';
 
 const app = express();
 
