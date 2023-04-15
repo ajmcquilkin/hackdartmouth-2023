@@ -1,8 +1,7 @@
 import express from "express";
 import axios from 'axios';
 import mysql from 'mysql';
-
-import { handleFetchLocalContext, handleFetchMetaContext } from './prompt-engine';
+import { handleQuestion } from "./prompt-engine";
 
 const app = express();
 
@@ -22,10 +21,7 @@ app.get("/question", async (req, res) => {
 
     connection.connect();
 
-    const [localContext, metaContext] = await Promise.all([
-        handleFetchLocalContext(),
-        handleFetchMetaContext()
-    ]);
+    handleQuestion('SAMPLE Q');
 
     connection.end();
 });
