@@ -1,0 +1,170 @@
+Why Not Mars (Idle Words)
+1.1.2023
+Why Not Mars
+
+For a successful technology, reality must take precedence over public relations, for nature cannot be fooled.
+
+— Richard Feynman
+
+Sunken pit on Mars with 30 meter wide hole showing cavern beneath
+
+Entrance to underground cavern on Pavonis Mons. HiRISE, 2011
+
+The goal of this essay is to persuade you that we shouldn’t send human beings to Mars, at least not anytime soon. Landing on Mars with existing technology would be a destructive, wasteful stunt whose only legacy would be to ruin the greatest natural history experiment in the Solar System. It would no more open a new era of spaceflight than a Phoenician sailor crossing the Atlantic in 500 B.C. would have opened up the New World. And it wouldn’t even be that much fun.
+
+
+Sticking a flag in the Martian dust would cost something north of half a trillion dollars [1], with no realistic prospect of landing before 2050 [2]. To borrow a quote from John Young, keeping such a program funded through fifteen consecutive Congresses would require a series “of continuous miracles, interspersed with acts of God”. [3] Like the Space Shuttle and Space Station before it, the Mars program would exist in a state of permanent redesign by budget committee until any logic or sense in the original proposal had been wrung out of it.
+
+
+
+Blue dunes on Mars
+
+Polar sand dunes, HiRISE, 2009
+
+
+
+The imbalance between human and robot is so overwhelming that, despite the presence of a $250 billion[10] International Space Station National Laboratory, every major discovery made in space this century has come from robotic spacecraft [11]. In 2023, we simply take it for granted that if a rocket goes up carrying passengers, it’s not going to get any work done.
+
+
+And yet this orbiting end-in-itself is also the closest we’ve come to building an interplanetary spacecraft. The idea of sending something like it on a three year journey to Mars does not get engineers’ hearts racing, at least not in the good way.
+
+Spring in the polar areas of Mars
+
+Mars in the springtime. The dots and dark lines are conjectured to be flow phenomena connected with sublimating dry ice. HiRISE, 2008
+
+Mars is also not the planet we took it for. The first photos Mariner 4 sent back in 1965 were shocking; instead of bucolic canals they showed a waterless, cratered wasteland not much different from the Moon. Ten years later, the Viking landers confirmed that Mars was a frozen, desiccated world bathed in sterilizing radiation, where any Earth creature that arrived unprotected would be dead before it hit the ground.
+
+
+The news from the ground also got better. Arriving at Gale Crater in 2012, the Curiosity rover found itself looking at an ordinary lake bed, complete with organic sediment and odd stick-like structures[16] that would be called fossils if we found them on Earth. The crater had been habitable for millions of years[17] in the past, and something in it was still emitting methane at night[18]. Over in its own crater, the Perseverance rover found complex organic molecules of indeterminate origin.
+
+Black sand dunes on Mars
+
+Sand dunes, HiRISE 2016
+
+But the really exciting news for Mars was the discovery of unexpected life on Earth. Microbiologists had long suspected that the 12,000 or so[19] known species of microbes were just a fraction of the total, with perhaps another hundred thousand[20] “unculturable” species left to discover. But when new sequencing technology became available at the turn of the century, it showed the number of species might be as high as one trillion [21]. In the genomic gold rush that followed, researchers discovered not just dozens of unsuspected microbial phyla[22], but two entire new branches of life[23].
+
+These new techniques confirmed that earth’s crust is inhabited to a depth of kilometers by a ‘deep biosphere’ of slow-living microbes nourished by geochemical processes and radioactive decay. One group of microbes was discovered still living their best lives[24] 100 million years after being sealed in sedimentary rock. Another was found enjoying a rewarding, long-term relationship with fungal partners deep beneath the seafloor[25]. This underground ecology, which we have barely started to explore, might account for a third[26] of the biomass on earth.
+
+Image
+
+Our family tree, circa 2016. Branches with red dots are ones we know nothing about. 
+Another 1,300 microbial phyla may remain undiscovered [27]. You and I are in the bottom right corner.
+
+
+The fact that we failed to notice 99.999% of life on Earth until a few years ago is unsettling and has implications for Mars. The existence of a deep biosphere in particular narrows the habitability gap between our planets to the point where it probably doesn’t exist—there is likely at least one corner of Mars that an Earth organism could call home. It also adds support to the theory that life may have started as an interplanetary infection, a literal Venereal disease that spread across the early solar system by meteorite[36]. If that is the case, and if our distant relatives are still alive in some deep Martian cave, then just about the worst way to go looking for them would be to land in a septic spacecraft.
+
+Image
+
+Dust devil tracks on Mars. What causes the dark parallel lines is still unknown. HiRISE, 2009.
+
+But the fact that a Mars landing stopped making sense has not had the slightest impact on NASA’s plan to go there in a rocket-propelled terrarium. Though facts may change, and technology may change, one thing will always remain the same—we’re going to Mars, 1950’s style.
+
+
+Last summer, at a press briefing on the Moon to Mars program[37], a journalist asked NASA Administrator Bill Nelson to explain to Americans in plain language why NASA wanted to send astronauts to Mars and to the Moon. His reply is worth quoting in full:
+
+“This is what I would tell them. First of all, we are explorers and adventurers as a species. That basically is the fulfilment of our destiny. But, in that exploration, we’re going to learn new things and develop new things that is going to improve, just as it’s been under our space program, our lives here on Earth.
+
+
+
+
+If the head of NOAA Ocean Exploration (budget: $25 million) or the U.S. Antarctic Program ($350 million) held a press conference announcing a plan to fulfill human destiny, they’d be carrying their belongings home in a cardboard box before sundown. But our space agency is held to a lower standard.
+
+
+Somehow we’ve embarked on the biggest project in history even though it has no articulable purpose, offers no benefits, and will cost taxpayers more than a good-sized war. Even the builders of the Great Pyramid at Giza could at least explain what it was for. And yet this project has sailed through an otherwise gridlocked system with the effortlessness of a Pentagon budget. Presidents of both parties now make landing on Mars an official goal of US space policy. Even billionaires who made their fortune automating labor on Earth agree that Mars must be artisanally explored by hand.
+
+The whole thing is getting weird.
+
+Image
+
+Volunteers carry out a mock mission at the Mars Desert Research Station in Utah (photo: Brian van der Brug)
+
+The Mars Religion
+
+
+At NASA, the faith takes the form of a cargo cult. The agency has persuaded itself that re-enacting the Moon landings with enough fidelity will reward them with a trip to Mars, bringing back the limitless budgets, uncomplicated patriotism, and rapt public attention of the early sixties. They send up their rockets with the same touching faith that keeps Amtrak hauling empty dining cars across the prairie, dreaming of the golden age of rail.
+
+
+That is some heavy stuff to lay on a small, rocky world.
+
+I think it’s time we brought the Mars talk down to earth, and started approaching a landing there as an aerospace project rather than the fulfillment of God’s plan. But so far, public discourse on Mars has mostly been about whose rocket is bigger and which billionaire can get his up the fastest.
+
+
+
+The argument I’ll make has three parts:
+
+1. Research
+
+Image
+
+Astronaut Karen Nyberg performs an eye exam on the ISS in 2013
+
+
+In particular, we need preliminary data on the physiological effects of partial gravity,[44] and a better estimate of the risk from heavy ion radiation[45]. Since core tradeoffs around crew safety depend on the outcome, these experiments have to be done before NASA can finalize a mission design.
+
+
+This research gap is what makes it impossible to get to Mars quickly, even with unlimited funding[47]. Unless you’re willing to risk the safety of the crew, there’s no way to avoid watching astronauts sit around on the Moon for a few years with their Geiger counters out.
+
+2. Engineering
+
+Interior of Skylab
+
+Italian astronaut Samantha Cristoforetti tests ISSpresso, her country's contribution to the ISS life support system, in 2015
+
+
+
+
+What makes life support so vexing is that all the subcomponents interact with each other and with the crew. There’s no such thing as a life support unit test; you have to run the whole system in space under conditions that mimic the target mission. Reliability engineering for life support involves solving mysteries like why gunk formed on a certain washer on Day 732, then praying on the next run that your fix doesn’t break on Day 733. The process repeats until the first crew makes it home alive (figuratively speaking), at which point you declare the technology reliable and chill the champagne.
+
+
+Twenty years of tinkering with the much simpler systems on the space station have brought them no closer to reliability. And yet to get a crew to Mars, we’d need to get this stuff working like a Swiss watch. Humanity does not need a billion dollar shit dehydrator that can work for three years in zero gravity, but a Mars mission can’t leave Earth without it.
+
+3. Contamination
+
+Image
+
+Debris left by the Perserverance landing, photographed in April 2022 by the Ingenuity helicopter.
+
+
+“No exploration without contamination” would be a good phrase to stencil in red letters above the airlock (ideally before welding it shut). Contamination risk is a real showstopper for Mars, one of those problems that gets worse the more carefully you look at it. It should put the planet off limits to human explorers until we’re either sure that there is no pathway from the spacecraft to a habitable Martian environment, or are confident for other reasons that the consequences don’t matter[51].
+
+
+Skeptics point out that Earth microbes have already landed on Mars, both on robotic landers[53] and the occasional meteorite. But as we’ll see, the diverse microbiome that would travel with a human crew poses a qualitatively different threat[54], and would have a far better chance of getting settled on Mars, than the sad loners clinging to rovers like Curiosity.
+
+
+Image
+
+
+That’s my case against Mars in a nutshell: it comes front-loaded with expensive research, the engineering is mostly port-a-potty chemistry, and the best-case outcome is that thirty years from now, we’ll get to watch someone remotely operate a soil scoop from Mars instead of Pasadena.
+
+
+
+
+
+ON THIS PLANET WE BELIEVE IN SCIENCE
+
+We’re at a rare moment when the United States is in between white elephant space projects. The ISS is nearing the end of its life[61], and tensions between NASA and Roscosmos have filled all hearts with hope that we can soon drop the thing into the ocean. For the first time since Nixon, Americans have a chance to choose a bolder future for their space program.
+
+
+
+NASA has spent decades learning how to survive in the harsh environment of Congress, and that knowledge is bearing fruit today. The machinery that brought us two pointless multibillion dollar space projects has been spun up again to take us to Mars. Like George Lucas preparing to release another awful prequel, NASA is hoping that cool spaceships and nostalgia will be enough to keep everyone from noticing that their story makes no sense. But you can't lie your way to Mars, no matter how sincerely you believe in what you're doing.
+
+The Other Mars Program
+
+“Mere failure to realize a long-term, aspirational goal is not fraud” 
+—lawyers representing Tesla, November 2022
+
+Image
+
+Of course, in 2022 there is an alternative vision for Mars exploration centered on the activities of Elon Musk. If NASA is Amtrak in space, then SpaceX is the Fyre Festival with rockets, a glamorous effort led by a hype man who promises that every logistical problem will melt away if we can just get people to the destination.
+
+
+SpaceX has built some magnificent rockets, and their dynamism is a welcome change from the souls-trapped-in-powerpoint vibe at NASA. If their founder were anyone else, SpaceX’s incredible track record of achievement would force us to take their Mars plan[65] seriously. But their founder is who he is, and what he has publicly shared is not so much a blueprint as an inspirational poster.
+
+
+The difficult and unglamorous problems of a Mars mission—how do you wash your socks? What is there to eat?— get no love from Elon. Once you get beyond “rocket factory go brrrrr,” there is no plan, just a familiar fog of Musky woo. The Mars rockets will refuel from autonomous robot factories powered by sunlight. Their crews will be shielded from radiation by some form of electromagnetic handwaving. Life support, the hardest practical problem in space travel, “is actually quite easy”. And of course Musk dismisses the problem of microbial contamination (which I can’t emphasize enough is governed by international treaty) as both inevitable and no big deal.
+
+
+
+
+Next week: The Shape of a Mars Mission
+
