@@ -13,7 +13,7 @@ load_dotenv()
 openai_api_endpoint = 'http://localhost:3000/read'
 
 # Set up the folder path for the .txt files
-folder_path = './biology'
+folder_path = './govt'
 
 
 # Initialize an incremental ID counter
@@ -39,6 +39,6 @@ for file_name in os.listdir(folder_path):
             print('Error: ', file_name)
             continue
         print('date', response['timestamp'])
-        print('essence', response['metadata'])
+        # print('essence', response['metadata'])
 
-        time.sleep(5)
+        time.sleep(2)

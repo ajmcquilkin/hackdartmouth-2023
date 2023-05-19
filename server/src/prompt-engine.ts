@@ -1,6 +1,7 @@
 import { db } from "./db";
 import { fromSQLiteDateTime, naturalDateFormat } from "./lib";
-import { prompt } from "./openai";
+import { embed, prompt } from "./openai";
+import * as pinecone from "./pinecone";
 
 export type Document = {
     id: string,
@@ -34,21 +35,36 @@ const buildLocalContext = async (question: string, hardcodedContext?: string): P
         return `Below is what I am currently referring to. I am reading this and pointing at it: "${localContext}"\n`
 }
 
-const buildHistoricalContext = async (question: string): Promise<string> => {
-        const metadataRows = db.prepare('SELECT id, metadata FROM documents').all() as Pick<Document, 'id' | 'metadata'>[];
-        // const questionTopics = await prompt(`"${question}?"\nI am asking you this question. List out the topics this question touches upon.`);
-        // prompt GPT to choose docs by evaluating user question against metadata
-        const chosenDocIds = (await prompt(`${metadataRows.map((row) => `[START] Document ID: ${row.id}. ${row.metadata} [END]`).join('\n')}"\n The above are all the documents I have read in the past. Each document has an integer ID and the content is surrounded by [START] and [END] flags.\nReturn a list of comma-separated IDs for the documents that are directly relevant to this question: ${question}`)).split(',');
-        console.log('CHOSEN:', chosenDocIds)
+const buildHistoricalContext = async (question: string) => {
+        // const metadataRows = db.prepare('SELECT id, metadata FROM documents').all() as Pick<Document, 'id' | 'metadata'>[];
+        const questionTopics = await prompt(`"${question}?"\nI am asking you this question. List out the topics this question likely touches upon.`);
+        const questionEmbedding = await embed(`${question}\n${questionTopics}`);
+        const similarDocs = await pinecone.query(questionEmbedding, 3, 0.72);
+        if (similarDocs.length == 0) {
+            return 'Simply respond to the user with "I don\'t think you\'ve read anything about that. Can you provide more details?" DISREGARD ALL TEXT BELOW THIS POINT.'
+        }
+        const fullBlobRows = db.prepare('SELECT id, timestamp, blob FROM documents WHERE id IN (' + similarDocs.map(() => '?').join(',') + ')').all(similarDocs.map(({ id }) => id)) as Pick<Document, 'id' | 'timestamp' | 'blob'>[];
 
-        const fullBlobRows = db.prepare('SELECT id, timestamp, metadata FROM documents WHERE id IN (' + chosenDocIds.map(() => '?').join(',') + ')').all(chosenDocIds) as Pick<Document, 'id' | 'timestamp' | 'metadata'>[];
-        
         // cap the length of this historical context
         const MAX_DOC_BLOB_LENGTH = MAX_PROMPT_TOKENS / fullBlobRows.length;
         fullBlobRows.forEach(doc => {
-            doc.metadata = doc.metadata.substring(0, MAX_DOC_BLOB_LENGTH);
+            doc.blob = doc.blob.substring(0, MAX_DOC_BLOB_LENGTH);
         })
-        return `Below are documents separated by [START] and [END] flags.\n${fullBlobRows.map((doc) => `[START] Document ID: ${doc.id}, read on ${naturalDateFormat(fromSQLiteDateTime(doc.timestamp))}. ${doc.metadata} [END]`).join('\n')}"\nThe above information contains texts I have read a long time ago.`
+
+        return `Below are documents separated by [START] and [END] flags.\n${fullBlobRows.map((doc) => `[START] Document ID: ${doc.id}, read on ${naturalDateFormat(fromSQLiteDateTime(doc.timestamp))}. ${doc.blob} [END]`).join('\n')}"\nThe above information contains texts I have read a long time ago.`
+
+        // prompt GPT to choose docs by evaluating user question against metadata
+        // const chosenDocIds = (await prompt(`${metadataRows.map((row) => `[START] Document ID: ${row.id}. ${row.metadata} [END]`).join('\n')}"\n The above are all the documents I have read in the past. Each document has an integer ID and the content is surrounded by [START] and [END] flags.\nReturn a list of comma-separated IDs for the documents that are directly relevant to this question: ${question}`)).split(',');
+        // console.log('CHOSEN:', chosenDocIds)
+
+        // const fullBlobRows = db.prepare('SELECT id, timestamp, metadata FROM documents WHERE id IN (' + chosenDocIds.map(() => '?').join(',') + ')').all(chosenDocIds) as Pick<Document, 'id' | 'timestamp' | 'metadata'>[];
+        
+        // cap the length of this historical context
+        // const MAX_DOC_BLOB_LENGTH = MAX_PROMPT_TOKENS / fullBlobRows.length;
+        // fullBlobRows.forEach(doc => {
+        //     doc.metadata = doc.metadata.substring(0, MAX_DOC_BLOB_LENGTH);
+        // })
+        // return `Below are documents separated by [START] and [END] flags.\n${fullBlobRows.map((doc) => `[START] Document ID: ${doc.id}, read on ${naturalDateFormat(fromSQLiteDateTime(doc.timestamp))}. ${doc.metadata} [END]`).join('\n')}"\nThe above information contains texts I have read a long time ago.`
 }
 
 export const handleQuestion = async (question: string, hardcodedContext?: string) => {
@@ -60,7 +76,8 @@ export const handleQuestion = async (question: string, hardcodedContext?: string
     if (refersThis) {
         overallContext += await buildLocalContext(question, hardcodedContext);
     }
-    const response = await prompt(`${overallContext}\nNow answer this question and elaborate: "${question}?" Very briefly mention the document metadata such as when I read it, title, author, etc, and then provide the essence of the document so I recall what it was about. Address me as "you".`, 512);
+    // Very briefly mention the document metadata such as when I read it, title, author, etc, and then provide the essence of the document so I recall what it was about.
+    const response = await prompt(`${overallContext}\nNow answer this question and elaborate: "${question}?" Address me as "you".`, 512);
     return response;
 }
 
